@@ -24,9 +24,9 @@ ans = []  # Конечный массив
 aver = i = 0  # Среднее арифметическое и их счетчик
 prod = 1  # Произведение элементов матрицы
 
-for i, row in enumerate(a):  # Подсчет произведения и среднего арифметического
+for j, row in enumerate(a):  # Подсчет произведения и среднего арифметического
 	for col in row:
-		if i == (x - 1) and col > 0:
+		if j == (x - 1) and col > 0:
 			aver += col
 			i += 1
 		ans.append(col)
