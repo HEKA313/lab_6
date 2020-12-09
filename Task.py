@@ -24,15 +24,13 @@ ans = []  # Конечный массив
 aver = i = 0  # Среднее арифметическое и их счетчик
 prod = 1  # Произведение элементов матрицы
 
-for row in a:  # Подсчет произведения
+for i, row in enumerate(a):  # Подсчет произведения и среднего арифметического
 	for col in row:
+		if i == (x - 1) and row > 0:
+			aver += row
+			i += 1
 		ans.append(col)
 		prod *= col
-
-for row in a[x - 1]:  # Подсчет среднего арифметического
-	if row > 0:
-		aver += row
-		i += 1
 
 check_positive = True
 
