@@ -7,12 +7,9 @@ file = open(name_file, 'r')  # Открытие файла для чтения
 n = int(file.readline())  # Ввод стороны квадратной матрицы
 print("Сторона матрица равна: {}".format(n))
 
-# n = int(input())
-
 a = [[0] * n for i in range(n)]  # инициализация массива
 
 for i in range(n):  # Ввод массива
-	# _ = input().split()
 	_ = file.readline().split()
 	for j in range(n):
 		a[i][j] = int(_[j])
